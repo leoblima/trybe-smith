@@ -9,9 +9,9 @@ class ProductController {
       const product = req.body;
       const productCreated = await this.productService.create(product);
   
-      res.status(201).json(productCreated);
+      return res.status(201).json(productCreated);
     } catch (error) {
-      res.status(500).json({ message: 'Internal Error!' });
+      return res.status(500).json({ message: 'Something went wrong!' });
     }
   };
 }
