@@ -1,9 +1,13 @@
 import express from 'express';
+import validationProduct from './middlewares/Product.middleware';
+import ProductController from './controllers/Product.controller';
 
 const app = express();
 
 app.use(express.json());
 
-export default app;
+const productController = new ProductController();
 
-// First commit
+app.post('/products', validationProduct, productController.create);
+
+export default app;
