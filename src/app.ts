@@ -10,4 +10,6 @@ const productController = new ProductController();
 
 app.post('/products', validationProduct, productController.create);
 
+app.get('/products', productController.getAll);
+
 export default app;
