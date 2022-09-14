@@ -9,10 +9,10 @@ class UserService {
     this.model = new UserModel(connection);
   }
 
-  public async getByUsername(username: string): Promise<User> {
+  public async getByUsername(username: string): Promise<User[]> {
     const user = await this.model.getByUsername(username);
 
-    return user[0];
+    return user;
   }
 
   public create(user: User): Promise<User> {

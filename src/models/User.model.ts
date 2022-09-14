@@ -10,7 +10,7 @@ class UserModel {
 
   public async getByUsername(username: string): Promise<User[]> {
     const result = await this.connection.execute(
-      'SELECT * Trybesmith.Users WHERE username = ?;',
+      'SELECT * FROM Trybesmith.Users WHERE username = ?;',
       [username],
     );
 

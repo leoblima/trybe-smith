@@ -20,7 +20,7 @@ class UserController {
     try {
       const { username } = req.body;
       const token = createJWT(username);
-      return res.status(201).json({ token });
+      return res.status(200).json({ token });
     } catch (error) {
       return res.status(500).json({ message: 'Something went wrong!' });
     }
