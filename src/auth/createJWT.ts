@@ -1,6 +1,6 @@
 import jwt, { SignOptions } from 'jsonwebtoken';
 
-function createJWT(username: string, id: number) {
+function createJWT(dataInput: string) {
   const secret = 'trybeSmith';
 
   const jwtConfig: SignOptions = {
@@ -8,7 +8,7 @@ function createJWT(username: string, id: number) {
     algorithm: 'HS256',
   };
 
-  const token = jwt.sign({ data: { userId: id, username } }, secret, jwtConfig);
+  const token = jwt.sign({ data: { username: dataInput } }, secret, jwtConfig);
 
   return token;
 }
