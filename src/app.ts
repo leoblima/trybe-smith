@@ -1,6 +1,7 @@
 import express from 'express';
 import validationProduct from './middlewares/Product.middleware';
 import validationUser from './middlewares/User.middleware';
+import validationLogin from './middlewares/Login.middleware';
 import ProductController from './controllers/Product.controller';
 import UserController from './controllers/User.controller';
 import OrderController from './controllers/Order.controller';
@@ -20,5 +21,7 @@ app.get('/products', productController.getAll);
 app.post('/users', validationUser, userController.create);
 
 app.get('/orders', orderController.getAll);
+
+app.post('/login', validationLogin, userController.login);
 
 export default app;
