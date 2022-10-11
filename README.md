@@ -1,7 +1,6 @@
 
 # Trybe Smith
-
-O programa cria uma API básica de CRUD podendo então listar, adicionar, atualizar e remover produtos e pedidos. Para algumas funcionalidades da API Trybe Smith é necessário fazer login que retorna um token. 
+O objetivo é simular uma loja de ferramentas medievais como vemos em jogos de fantasia. Trata-se de uma API básica de CRUD podendo então listar, adicionar e atualizar  produtos, usuários e pedidos. Na API Trybe Smith é possível fazer login que retorna um token. 
 
 
 
