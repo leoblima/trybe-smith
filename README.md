@@ -7,10 +7,16 @@ O programa cria uma API básica de CRUD podendo então listar, adicionar, atuali
 
 
 ## Tecnologias
+As principais tecnologias utilizadas foram:
 
-**Server:** Node, Express, MySQL 
+- Node.js: 16.14.0
+- Express: 4.17.13
+- Mysql2: 2.3.0
+- Jsonwebtoken: 8.5.1
+- Dotenv: 10.0.0
+- Typescript: 4.4.3
 
-**Languages:** Typescript
+Mais informações estão presentes no package.json.
 
 
 ## Rodando Localmente
